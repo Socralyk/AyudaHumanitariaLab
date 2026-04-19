@@ -151,6 +151,7 @@ Partial Class Presentacion
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
+        BackgroundImage = My.Resources.Resources.Gemini_Generated_Image_adce2jadce2jadce
         ClientSize = New Size(800, 450)
         Controls.Add(MenuStrip1)
         MainMenuStrip = MenuStrip1
