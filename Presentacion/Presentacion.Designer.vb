@@ -39,6 +39,7 @@ Partial Class Presentacion
         PersonajesToolStripMenuItem1 = New ToolStripMenuItem()
         ADistanciaToolStripMenuItem = New ToolStripMenuItem()
         CuerpoACuerpoToolStripMenuItem1 = New ToolStripMenuItem()
+        PanelMuestra = New Panel()
         MenuStrip1.SuspendLayout()
         SuspendLayout()
         ' 
@@ -132,27 +133,35 @@ Partial Class Presentacion
         ' 
         PersonajesToolStripMenuItem1.DropDownItems.AddRange(New ToolStripItem() {ADistanciaToolStripMenuItem, CuerpoACuerpoToolStripMenuItem1})
         PersonajesToolStripMenuItem1.Name = "PersonajesToolStripMenuItem1"
-        PersonajesToolStripMenuItem1.Size = New Size(161, 26)
+        PersonajesToolStripMenuItem1.Size = New Size(224, 26)
         PersonajesToolStripMenuItem1.Text = "Personajes"
         ' 
         ' ADistanciaToolStripMenuItem
         ' 
         ADistanciaToolStripMenuItem.Name = "ADistanciaToolStripMenuItem"
-        ADistanciaToolStripMenuItem.Size = New Size(202, 26)
+        ADistanciaToolStripMenuItem.Size = New Size(224, 26)
         ADistanciaToolStripMenuItem.Text = "A distancia"
         ' 
         ' CuerpoACuerpoToolStripMenuItem1
         ' 
         CuerpoACuerpoToolStripMenuItem1.Name = "CuerpoACuerpoToolStripMenuItem1"
-        CuerpoACuerpoToolStripMenuItem1.Size = New Size(202, 26)
+        CuerpoACuerpoToolStripMenuItem1.Size = New Size(224, 26)
         CuerpoACuerpoToolStripMenuItem1.Text = "Cuerpo a cuerpo"
+        ' 
+        ' PanelMuestra
+        ' 
+        PanelMuestra.Dock = DockStyle.Fill
+        PanelMuestra.Location = New Point(0, 28)
+        PanelMuestra.Name = "PanelMuestra"
+        PanelMuestra.Size = New Size(800, 422)
+        PanelMuestra.TabIndex = 2
         ' 
         ' Presentacion
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        BackgroundImage = My.Resources.Resources.Gemini_Generated_Image_adce2jadce2jadce
         ClientSize = New Size(800, 450)
+        Controls.Add(PanelMuestra)
         Controls.Add(MenuStrip1)
         MainMenuStrip = MenuStrip1
         Name = "Presentacion"
@@ -179,4 +188,5 @@ Partial Class Presentacion
     Friend WithEvents PersonajesToolStripMenuItem1 As ToolStripMenuItem
     Friend WithEvents ADistanciaToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents CuerpoACuerpoToolStripMenuItem1 As ToolStripMenuItem
+    Friend WithEvents PanelMuestra As Panel
 End Class
