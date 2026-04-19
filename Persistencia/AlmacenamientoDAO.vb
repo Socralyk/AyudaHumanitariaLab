@@ -5,12 +5,12 @@
     Public Sub New()
         Me.Almacenamiento = New Collection
     End Sub
-
+    'HIASJISOAJDOIASJDOIAJSDOIJSA
     Public Sub LeerTodas()
         Dim p As Almacenamiento
         Dim col, aux As Collection
         col = AgenteBD.ObtenerAgente().Leer("SELECT * FROM almacenamiento ORDER BY IdCentro, IdSuministro")
-        For Each aux In col
+        For Each aux In col 
             p = New Almacenamiento(aux(1).ToString, aux(2).ToString)
             p.CantidadStock = aux(3).ToString
             Me.Almacenamiento.Add(p)
