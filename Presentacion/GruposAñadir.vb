@@ -1,17 +1,17 @@
-﻿Public Class AgenciasAñadir
+﻿Public Class GruposAñadir
     Private Sub ButtonAñadir_Click(sender As Object, e As EventArgs) Handles BotonAñadir.Click
-        Dim pAux As Agencia
-        If TextBoxNumContacto.Text = "" Or TextBoxNombre.Text = "" Or TextBoxPais.Text = "" Then
+        Dim pAux As Grupo
+        If TextBoxIDEntrenador.Text = "" Or TextBoxNombre.Text = "" Or TextBoxPaisGrupos.Text = "" Then
             MessageBox.Show("Faltan datos por rellenar", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Warning)
             Exit Sub
         End If
 
-        pAux = New Agencia()
-        pAux.Num_Contacto = TextBoxNumContacto.Text
-        pAux.Pais = TextBoxPais.Text
+        pAux = New Grupo()
+        pAux.ID_Entrenador = TextBoxIDEntrenador.Text
+        pAux.Pais = TextBoxPaisGrupos.Text
         pAux.Nombre = TextBoxNombre.Text
         Try
-            pAux.InsertarAgencia()
+            pAux.InsertarGrupo()
         Catch ex As Exception
             MessageBox.Show(ex.Message, ex.Source, MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
             Exit Sub
@@ -21,16 +21,9 @@
         vaciarTextBox()
     End Sub
     Private Sub vaciarTextBox()
-        TextBoxNumContacto.Text = ""
-        TextBoxPais.Text = ""
+        TextBoxIDEntrenador.Text = ""
+        TextBoxPaisGrupos.Text = ""
         TextBoxNombre.Text = ""
     End Sub
 
-    Private Sub TextBoxNumContacto_TextChanged(sender As Object, e As EventArgs) Handles TextBoxNumContacto.TextChanged
-
-    End Sub
-
-    Private Sub TableLayoutPanel1_Paint(sender As Object, e As PaintEventArgs) Handles TableLayoutPanel1.Paint
-
-    End Sub
 End Class

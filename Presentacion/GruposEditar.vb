@@ -1,24 +1,24 @@
-﻿Imports System.Windows.Forms.VisualStyles.VisualStyleElement
-Public Class AgenciasEditar
-    Private c As Agencia
-    Friend Sub agenciaSeleccionada(seleccionado As Agencia)
+﻿Public Class GruposEditar
+
+    Private c As Grupo
+    Friend Sub GrupoSeleccionado(seleccionado As Grupo)
         c = seleccionado
-        TextboxNombre.Text = c.Nombre
+        TextBoxNombre.Text = c.Nombre
         TextBoxPais.Text = c.Pais
     End Sub
 
     Private Sub ButtonEliminar_Click(sender As Object, e As EventArgs) Handles BotonBorrar.Click
         Dim respuesta As DialogResult
-        If TextBoxNombre.Text = "" Or TextBoxPais.Text = "" Or ComboboxNumContacto.Text = "" Then
+        If TextBoxNombre.Text = "" Or TextBoxPais.Text = "" Or ComboboxIdEntrenador.Text = "" Then
             MessageBox.Show("Faltan datos por rellenar", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Warning)
             Exit Sub
         End If
-        Dim numContacto As String = ComboboxNumContacto.Text
+        Dim identrenador As String = ComboboxIdEntrenador.Text
         Dim nombre As String = TextBoxNombre.Text
         Dim pais As String = TextBoxPais.Text
-        Dim pAux As Agencia
-        pAux = New Agencia()
-        pAux.Num_Contacto = numContacto
+        Dim pAux As Grupo
+        pAux = New Grupo()
+        pAux.ID_Entrenador = identrenador
         pAux.Nombre = nombre
         pAux.Pais = pais
 
@@ -31,7 +31,7 @@ Public Class AgenciasEditar
         If respuesta = DialogResult.Yes Then
             Try
                 ' Aquí va el código si el usuario pulsa SÍ
-                pAux.BorrarAgencia()
+                pAux.BorrarGrupo()
                 MessageBox.Show("borrado con éxito.")
             Catch ex As Exception
                 MessageBox.Show(ex.Message, ex.Source, MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
@@ -48,17 +48,17 @@ Public Class AgenciasEditar
 
     Private Sub ButtonEditar_Click(sender As Object, e As EventArgs) Handles BotonEditar.Click
         Dim respuesta As DialogResult
-        If TextBoxNombre.Text = "" Or TextBoxPais.Text = "" Or ComboboxNumContacto.Text = "" Then
+        If TextBoxNombre.Text = "" Or TextBoxPais.Text = "" Or ComboboxIdEntrenador.Text = "" Then
             MessageBox.Show("Faltan datos por rellenar", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Warning)
             Exit Sub
         End If
 
-        Dim numContacto As String = ComboboxNumContacto.Text
+        Dim identrenador As String = ComboboxIdEntrenador.Text
         Dim nombre As String = TextBoxNombre.Text
         Dim pais As String = TextBoxPais.Text
-        Dim pAux As Agencia
-        pAux = New Agencia()
-        pAux.Num_Contacto = numContacto
+        Dim pAux As Grupo
+        pAux = New Grupo()
+        pAux.ID_Entrenador = identrenador
         pAux.Nombre = nombre
         pAux.Pais = pais
         ' Mostramos el mensaje con botones Yes y No, y un icono de interrogación
@@ -70,7 +70,7 @@ Public Class AgenciasEditar
         If respuesta = DialogResult.Yes Then
             Try
                 ' Aquí va el código si el usuario pulsa SÍ
-                pAux.ActualizarAgencia()
+                pAux.ActualizarGrupo()
                 MessageBox.Show("editado con éxito.")
             Catch ex As Exception
                 MessageBox.Show(ex.Message, ex.Source, MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
@@ -87,13 +87,8 @@ Public Class AgenciasEditar
     Public Sub vaciarTextBox()
         TextBoxNombre.Text = ""
         TextBoxPais.Text = ""
-        ComboboxNumContacto.Text = ""
+        ComboboxIdEntrenador.Text = ""
     End Sub
-
-    Private Sub ComboboxNumContacto_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboboxNumContacto.SelectedIndexChanged
-
-    End Sub
-
     Private Sub TableLayoutPanel1_Paint(sender As Object, e As PaintEventArgs) Handles TableLayoutPanel1.Paint
 
     End Sub

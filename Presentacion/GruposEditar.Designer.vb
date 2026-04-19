@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class AgenciasEditar
+Partial Class GruposEditar
     Inherits System.Windows.Forms.UserControl
 
     'UserControl reemplaza a Dispose para limpiar la lista de componentes.
@@ -22,59 +22,14 @@ Partial Class AgenciasEditar
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        ComboboxNumContacto = New ComboBox()
+        TableLayoutPanel1 = New TableLayoutPanel()
         TextBoxNombre = New TextBox()
-        TextBoxPais = New TextBox()
         BotonBorrar = New Button()
         BotonEditar = New Button()
-        TableLayoutPanel1 = New TableLayoutPanel()
+        TextBoxPais = New TextBox()
+        ComboboxIdEntrenador = New ComboBox()
         TableLayoutPanel1.SuspendLayout()
         SuspendLayout()
-        ' 
-        ' ComboboxNumContacto
-        ' 
-        ComboboxNumContacto.Anchor = AnchorStyles.None
-        ComboboxNumContacto.FormattingEnabled = True
-        ComboboxNumContacto.Location = New Point(590, 136)
-        ComboboxNumContacto.Name = "ComboboxNumContacto"
-        ComboboxNumContacto.Size = New Size(133, 28)
-        ComboboxNumContacto.TabIndex = 2
-        ' 
-        ' TextBoxNombre
-        ' 
-        TextBoxNombre.Anchor = AnchorStyles.None
-        TextBoxNombre.Location = New Point(68, 136)
-        TextBoxNombre.Name = "TextBoxNombre"
-        TextBoxNombre.Size = New Size(125, 27)
-        TextBoxNombre.TabIndex = 3
-        ' 
-        ' TextBoxPais
-        ' 
-        TextBoxPais.Anchor = AnchorStyles.None
-        TextBoxPais.Location = New Point(330, 136)
-        TextBoxPais.Name = "TextBoxPais"
-        TextBoxPais.Size = New Size(125, 27)
-        TextBoxPais.TabIndex = 4
-        ' 
-        ' BotonBorrar
-        ' 
-        BotonBorrar.Anchor = AnchorStyles.None
-        BotonBorrar.Location = New Point(609, 341)
-        BotonBorrar.Name = "BotonBorrar"
-        BotonBorrar.Size = New Size(94, 29)
-        BotonBorrar.TabIndex = 5
-        BotonBorrar.Text = "Borrar"
-        BotonBorrar.UseVisualStyleBackColor = True
-        ' 
-        ' BotonEditar
-        ' 
-        BotonEditar.Anchor = AnchorStyles.None
-        BotonEditar.Location = New Point(609, 304)
-        BotonEditar.Name = "BotonEditar"
-        BotonEditar.Size = New Size(94, 29)
-        BotonEditar.TabIndex = 6
-        BotonEditar.Text = "Actualizar"
-        BotonEditar.UseVisualStyleBackColor = True
         ' 
         ' TableLayoutPanel1
         ' 
@@ -86,7 +41,7 @@ Partial Class AgenciasEditar
         TableLayoutPanel1.Controls.Add(BotonBorrar, 2, 2)
         TableLayoutPanel1.Controls.Add(BotonEditar, 2, 1)
         TableLayoutPanel1.Controls.Add(TextBoxPais, 1, 0)
-        TableLayoutPanel1.Controls.Add(ComboboxNumContacto, 2, 0)
+        TableLayoutPanel1.Controls.Add(ComboboxIdEntrenador, 2, 0)
         TableLayoutPanel1.Dock = DockStyle.Fill
         TableLayoutPanel1.Location = New Point(0, 0)
         TableLayoutPanel1.Name = "TableLayoutPanel1"
@@ -94,25 +49,71 @@ Partial Class AgenciasEditar
         TableLayoutPanel1.RowStyles.Add(New RowStyle(SizeType.Percent, 80F))
         TableLayoutPanel1.RowStyles.Add(New RowStyle(SizeType.Percent, 10F))
         TableLayoutPanel1.RowStyles.Add(New RowStyle(SizeType.Percent, 10F))
-        TableLayoutPanel1.Size = New Size(789, 375)
-        TableLayoutPanel1.TabIndex = 7
+        TableLayoutPanel1.Size = New Size(565, 421)
+        TableLayoutPanel1.TabIndex = 8
         ' 
-        ' AgenciasEditar
+        ' TextBoxNombre
+        ' 
+        TextBoxNombre.Anchor = AnchorStyles.None
+        TextBoxNombre.Location = New Point(31, 154)
+        TextBoxNombre.Name = "TextBoxNombre"
+        TextBoxNombre.Size = New Size(125, 27)
+        TextBoxNombre.TabIndex = 3
+        ' 
+        ' BotonBorrar
+        ' 
+        BotonBorrar.Anchor = AnchorStyles.None
+        BotonBorrar.Location = New Point(423, 385)
+        BotonBorrar.Name = "BotonBorrar"
+        BotonBorrar.Size = New Size(94, 29)
+        BotonBorrar.TabIndex = 5
+        BotonBorrar.Text = "Borrar"
+        BotonBorrar.UseVisualStyleBackColor = True
+        ' 
+        ' BotonEditar
+        ' 
+        BotonEditar.Anchor = AnchorStyles.None
+        BotonEditar.Location = New Point(423, 342)
+        BotonEditar.Name = "BotonEditar"
+        BotonEditar.Size = New Size(94, 29)
+        BotonEditar.TabIndex = 6
+        BotonEditar.Text = "Actualizar"
+        BotonEditar.UseVisualStyleBackColor = True
+        ' 
+        ' TextBoxPais
+        ' 
+        TextBoxPais.Anchor = AnchorStyles.None
+        TextBoxPais.Location = New Point(219, 154)
+        TextBoxPais.Name = "TextBoxPais"
+        TextBoxPais.Size = New Size(125, 27)
+        TextBoxPais.TabIndex = 4
+        ' 
+        ' ComboboxIdEntrenador
+        ' 
+        ComboboxIdEntrenador.Anchor = AnchorStyles.None
+        ComboboxIdEntrenador.FormattingEnabled = True
+        ComboboxIdEntrenador.Location = New Point(404, 154)
+        ComboboxIdEntrenador.Name = "ComboboxIdEntrenador"
+        ComboboxIdEntrenador.Size = New Size(133, 28)
+        ComboboxIdEntrenador.TabIndex = 2
+        ' 
+        ' GruposEditar
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         Controls.Add(TableLayoutPanel1)
-        Name = "AgenciasEditar"
-        Size = New Size(789, 375)
+        Name = "GruposEditar"
+        Size = New Size(565, 421)
         TableLayoutPanel1.ResumeLayout(False)
         TableLayoutPanel1.PerformLayout()
         ResumeLayout(False)
     End Sub
-    Friend WithEvents ComboboxNumContacto As ComboBox
+
+    Friend WithEvents TableLayoutPanel1 As TableLayoutPanel
     Friend WithEvents TextBoxNombre As TextBox
-    Friend WithEvents TextBoxPais As TextBox
     Friend WithEvents BotonBorrar As Button
     Friend WithEvents BotonEditar As Button
-    Friend WithEvents TableLayoutPanel1 As TableLayoutPanel
+    Friend WithEvents TextBoxPais As TextBox
+    Friend WithEvents ComboboxIdEntrenador As ComboBox
 
 End Class

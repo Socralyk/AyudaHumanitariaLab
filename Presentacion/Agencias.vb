@@ -52,7 +52,7 @@
         Me.editar_boolean = False
     End Sub
 
-    Private Sub ListBoxCentros_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ListBoxAgencias.SelectedIndexChanged
+    Private Sub ListBoxAgencias_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ListBoxAgencias.SelectedIndexChanged
         If Not Me.ListBoxAgencias.SelectedItem Is Nothing Then
             ' 1. Creamos el objeto voluntario con el DNI seleccionado
             Dim seleccionado As New Agencia(Me.ListBoxAgencias.SelectedItem.ToString())
@@ -71,8 +71,12 @@
                 cambiarvista(vistaEditar)
                 editar_boolean = True
             Catch ex As Exception
-                MessageBox.Show("Error al cargar el voluntario: " & ex.Message)
+                MessageBox.Show("Error al cargar la agencia: " & ex.Message)
             End Try
         End If
+    End Sub
+
+    Private Sub PanelAgencias_Paint(sender As Object, e As PaintEventArgs) Handles PanelAgencias.Paint
+
     End Sub
 End Class
