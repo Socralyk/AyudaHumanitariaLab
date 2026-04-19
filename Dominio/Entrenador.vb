@@ -1,19 +1,19 @@
-﻿Public Class Entrega
-
-    Public Property IDEntrega As Integer
-    Public Property IDCentroOrigen As Integer
-    Public Property IDZonaDestino As Integer
-    Public Property DNIVoluntario As String
-    Public Property Fecha As Date
-    Public ReadOnly Property EntDAO As EntregaDAO
+﻿Public Class Entrenador
+    Public Property ID_Entrenador As String
+    Public Property Num_Agencia As Integer
+    Public Property Nombre As String
+    Public Property Apellidos As String
+    Public Property Nacionalidad As String
+    Public Property Edad As Integer
+    Public ReadOnly Property EntDAO As EntrenadorDAO
 
     Public Sub New()
-        Me.EntDAO = New EntregaDAO
+        Me.EntDAO = New EntrenadorDAO
     End Sub
 
-    Public Sub New(id1 As Integer)
-        Me.EntDAO = New EntregaDAO
-        Me.IDEntrega = id1
+    Public Sub New(id1 As String)
+        Me.EntDAO = New EntrenadorDAO
+        Me.ID_Entrenador = id1
     End Sub
 
     Public Sub LeerTodosAlmacenamientos()
