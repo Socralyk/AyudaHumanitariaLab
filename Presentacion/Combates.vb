@@ -1,5 +1,32 @@
 ﻿Public Class Combates
+    Dim añadir_boolean As Boolean
+    Dim editar_boolean As Boolean
     Dim c As Combate
+    Private Sub AñadirCentro_boton_Click(sender As Object, e As EventArgs) Handles AñadirCombate.Click
+        If añadir_boolean Then
+            PanelCombates.Controls.Clear()
+            añadir_boolean = False
+        Else
+            cambiarvista(New CombatesAñadir())
+            añadir_boolean = True
+        End If
+    End Sub
+
+    Private Sub editar_centro_boton_Click(sender As Object, e As EventArgs) Handles EditarCombate.Click
+        If editar_boolean Then
+            PanelCombates.Controls.Clear()
+            editar_boolean = False
+        Else
+            cambiarvista(New CombatesEditar())
+            editar_boolean = True
+        End If
+    End Sub
+    Private Sub cambiarvista(vistanueva As Control)
+        PanelCombates.Controls.Clear()
+        vistanueva.Dock = DockStyle.Fill
+        PanelCombates.Controls.Add(vistanueva)
+        vistanueva.BringToFront()
+    End Sub
     Public Sub refrescarlistbox()
         Dim pAux As Combate
         Me.c = New Combate
@@ -14,6 +41,11 @@
             Me.ListBoxCombates.Items.Add(pAux.Id_combate)
         Next
     End Sub
+    Private Sub CentroLogistico_pag_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        refrescarlistbox()
+        Me.añadir_boolean = False
+        Me.editar_boolean = False
+    End Sub
 
     Private Sub ListBoxCentros_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ListBoxCombates.SelectedIndexChanged
         If Not Me.ListBoxCombates.SelectedItem Is Nothing Then
@@ -25,7 +57,7 @@
                 seleccionado.LeerCombate()
 
                 ' 3. Creamos la vista de edición
-                Dim vistaEditar As New CentroLogistico_pag_editar()
+                Dim vistaEditar As New CombatesEditar()
 
                 ' 4. Llamamos a la función para pasarle los datos
                 vistaEditar.centroseleccionado(seleccionado)
@@ -39,7 +71,7 @@
         End If
     End Sub
 
-    Private Sub Combates_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        refrescarlistbox()
+    Private Sub ToolStripStatusLabel2_Click(sender As Object, e As EventArgs) Handles EditarCombate.Click
+
     End Sub
 End Class
