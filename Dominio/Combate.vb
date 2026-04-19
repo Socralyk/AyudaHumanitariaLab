@@ -4,7 +4,6 @@
     Public Property nombre_grupo1 As String
     Public Property nombre_grupo2 As String
     Public Property id_mapa As String
-
     Public Property detalles As Collection
     Public ReadOnly Property CombateDAO As CombateDAO
 

@@ -22,29 +22,27 @@ Partial Class Combates
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Label1 = New Label()
+        ListBoxCombates = New ListBox()
         SuspendLayout()
         ' 
-        ' Label1
+        ' ListBoxCombates
         ' 
-        Label1.AutoSize = True
-        Label1.Location = New Point(490, 167)
-        Label1.Name = "Label1"
-        Label1.Size = New Size(76, 20)
-        Label1.TabIndex = 0
-        Label1.Text = "Combates"
+        ListBoxCombates.FormattingEnabled = True
+        ListBoxCombates.Location = New Point(15, 12)
+        ListBoxCombates.Name = "ListBoxCombates"
+        ListBoxCombates.Size = New Size(150, 104)
+        ListBoxCombates.TabIndex = 0
         ' 
         ' Combates
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        Controls.Add(Label1)
+        Controls.Add(ListBoxCombates)
         Name = "Combates"
         Size = New Size(1162, 768)
         ResumeLayout(False)
-        PerformLayout()
     End Sub
 
-    Friend WithEvents Label1 As Label
+    Friend WithEvents ListBoxCombates As ListBox
 
 End Class
