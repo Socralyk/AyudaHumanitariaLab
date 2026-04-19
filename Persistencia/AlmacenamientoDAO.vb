@@ -5,7 +5,7 @@
     Public Sub New()
         Me.Almacenamiento = New Collection
     End Sub
-    'HIASJISOAJDOIASJDOIAJSDOIJSA
+
     Public Sub LeerTodas()
         Dim p As Almacenamiento
         Dim col, aux As Collection
