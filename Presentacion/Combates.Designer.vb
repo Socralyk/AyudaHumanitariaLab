@@ -26,7 +26,6 @@ Partial Class Combates
         StatusStrip1 = New StatusStrip()
         AñadirCombate = New ToolStripStatusLabel()
         EditarCombate = New ToolStripStatusLabel()
-        BorrarCombate = New ToolStripStatusLabel()
         PanelCombates = New Panel()
         StatusStrip1.SuspendLayout()
         SuspendLayout()
@@ -43,7 +42,7 @@ Partial Class Combates
         ' StatusStrip1
         ' 
         StatusStrip1.ImageScalingSize = New Size(20, 20)
-        StatusStrip1.Items.AddRange(New ToolStripItem() {AñadirCombate, EditarCombate, BorrarCombate})
+        StatusStrip1.Items.AddRange(New ToolStripItem() {AñadirCombate, EditarCombate})
         StatusStrip1.Location = New Point(150, 561)
         StatusStrip1.Name = "StatusStrip1"
         StatusStrip1.Size = New Size(975, 26)
@@ -61,12 +60,6 @@ Partial Class Combates
         EditarCombate.Name = "EditarCombate"
         EditarCombate.Size = New Size(48, 20)
         EditarCombate.Text = "Editar"
-        ' 
-        ' BorrarCombate
-        ' 
-        BorrarCombate.Name = "BorrarCombate"
-        BorrarCombate.Size = New Size(50, 20)
-        BorrarCombate.Text = "Borrar"
         ' 
         ' PanelCombates
         ' 
@@ -95,7 +88,6 @@ Partial Class Combates
     Friend WithEvents StatusStrip1 As StatusStrip
     Friend WithEvents AñadirCombate As ToolStripStatusLabel
     Friend WithEvents EditarCombate As ToolStripStatusLabel
-    Friend WithEvents BorrarCombate As ToolStripStatusLabel
     Friend WithEvents PanelCombates As Panel
 
 End Class

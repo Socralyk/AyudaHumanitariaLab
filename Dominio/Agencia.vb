@@ -13,23 +13,23 @@
         Me.Num_Contacto = id1
     End Sub
 
-    Public Sub LeerTodosAlmacenamientos()
+    Public Sub LeerTodasAgencias()
         Me.AgeDAO.LeerTodas()
     End Sub
 
-    Public Sub LeerAlmacenamiento()
+    Public Sub LeerAgencia()
         Me.AgeDAO.Leer(Me)
     End Sub
 
-    Public Function InsertarAlmacenamiento() As Integer
+    Public Function InsertarAgencia() As Integer
         Return Me.AgeDAO.Insertar(Me)
     End Function
 
-    Public Function ActualizarAlmacenamiento() As Integer
+    Public Function ActualizarAgencia() As Integer
         Return Me.AgeDAO.Actualizar(Me)
     End Function
 
-    Public Function BorrarAlmacenamiento() As Integer
+    Public Function BorrarAgencia() As Integer
         Return Me.AgeDAO.Borrar(Me)
     End Function
 

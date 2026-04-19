@@ -14,23 +14,23 @@
         Me.ID_Grupo = id1
     End Sub
 
-    Public Sub LeerTodosAlmacenamientos()
+    Public Sub LeerTodosGrupos()
         Me.GruDAO.LeerTodas()
     End Sub
 
-    Public Sub LeerAlmacenamiento()
+    Public Sub LeerGrupo()
         Me.GruDAO.Leer(Me)
     End Sub
 
-    Public Function InsertarAlmacenamiento() As Integer
+    Public Function InsertarGrupo() As Integer
         Return Me.GruDAO.Insertar(Me)
     End Function
 
-    Public Function ActualizarAlmacenamiento() As Integer
+    Public Function ActualizarGrupo() As Integer
         Return Me.GruDAO.Actualizar(Me)
     End Function
 
-    Public Function BorrarAlmacenamiento() As Integer
+    Public Function BorrarGrupo() As Integer
         Return Me.GruDAO.Borrar(Me)
     End Function
 

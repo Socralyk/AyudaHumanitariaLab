@@ -16,23 +16,23 @@
         Me.ID_Jugador = id1
     End Sub
 
-    Public Sub LeerTodosAlmacenamientos()
+    Public Sub LeerTodosJugadores()
         Me.JugDAO.LeerTodas()
     End Sub
 
-    Public Sub LeerAlmacenamiento()
+    Public Sub LeerJugador()
         Me.JugDAO.Leer(Me)
     End Sub
 
-    Public Function InsertarAlmacenamiento() As Integer
+    Public Function InsertarJugador() As Integer
         Return Me.JugDAO.Insertar(Me)
     End Function
 
-    Public Function ActualizarAlmacenamiento() As Integer
+    Public Function ActualizarJugador() As Integer
         Return Me.JugDAO.Actualizar(Me)
     End Function
 
-    Public Function BorrarAlmacenamiento() As Integer
+    Public Function BorrarJugador() As Integer
         Return Me.JugDAO.Borrar(Me)
     End Function
 End Class

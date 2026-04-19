@@ -16,23 +16,23 @@
         Me.ID_Entrenador = id1
     End Sub
 
-    Public Sub LeerTodosAlmacenamientos()
+    Public Sub LeerTodosEntrenadores()
         Me.EntDAO.LeerTodas()
     End Sub
 
-    Public Sub LeerAlmacenamiento()
+    Public Sub LeerEntrenador()
         Me.EntDAO.Leer(Me)
     End Sub
 
-    Public Function InsertarAlmacenamiento() As Integer
+    Public Function InsertarEntrenador() As Integer
         Return Me.EntDAO.Insertar(Me)
     End Function
 
-    Public Function ActualizarAlmacenamiento() As Integer
+    Public Function ActualizarEntrenador() As Integer
         Return Me.EntDAO.Actualizar(Me)
     End Function
 
-    Public Function BorrarAlmacenamiento() As Integer
+    Public Function BorrarEntrenador() As Integer
         Return Me.EntDAO.Borrar(Me)
     End Function
 
