@@ -28,25 +28,32 @@ Partial Class GruposEditar
         BotonEditar = New Button()
         TextBoxPais = New TextBox()
         ComboboxIdEntrenador = New ComboBox()
+        Label1 = New Label()
+        Label2 = New Label()
+        Label3 = New Label()
         TableLayoutPanel1.SuspendLayout()
         SuspendLayout()
         ' 
         ' TableLayoutPanel1
         ' 
         TableLayoutPanel1.ColumnCount = 3
-        TableLayoutPanel1.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 33.3333321F))
-        TableLayoutPanel1.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 33.3333321F))
-        TableLayoutPanel1.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 33.3333321F))
-        TableLayoutPanel1.Controls.Add(TextBoxNombre, 0, 0)
-        TableLayoutPanel1.Controls.Add(BotonBorrar, 2, 2)
-        TableLayoutPanel1.Controls.Add(BotonEditar, 2, 1)
-        TableLayoutPanel1.Controls.Add(TextBoxPais, 1, 0)
-        TableLayoutPanel1.Controls.Add(ComboboxIdEntrenador, 2, 0)
+        TableLayoutPanel1.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 33.33333F))
+        TableLayoutPanel1.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 33.3333359F))
+        TableLayoutPanel1.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 33.3333359F))
+        TableLayoutPanel1.Controls.Add(Label3, 2, 0)
+        TableLayoutPanel1.Controls.Add(Label2, 1, 0)
+        TableLayoutPanel1.Controls.Add(Label1, 0, 0)
+        TableLayoutPanel1.Controls.Add(TextBoxNombre, 0, 1)
+        TableLayoutPanel1.Controls.Add(BotonBorrar, 2, 3)
+        TableLayoutPanel1.Controls.Add(BotonEditar, 2, 2)
+        TableLayoutPanel1.Controls.Add(TextBoxPais, 1, 1)
+        TableLayoutPanel1.Controls.Add(ComboboxIdEntrenador, 2, 1)
         TableLayoutPanel1.Dock = DockStyle.Fill
         TableLayoutPanel1.Location = New Point(0, 0)
         TableLayoutPanel1.Name = "TableLayoutPanel1"
-        TableLayoutPanel1.RowCount = 3
-        TableLayoutPanel1.RowStyles.Add(New RowStyle(SizeType.Percent, 80F))
+        TableLayoutPanel1.RowCount = 4
+        TableLayoutPanel1.RowStyles.Add(New RowStyle(SizeType.Percent, 40F))
+        TableLayoutPanel1.RowStyles.Add(New RowStyle(SizeType.Percent, 40F))
         TableLayoutPanel1.RowStyles.Add(New RowStyle(SizeType.Percent, 10F))
         TableLayoutPanel1.RowStyles.Add(New RowStyle(SizeType.Percent, 10F))
         TableLayoutPanel1.Size = New Size(565, 421)
@@ -54,8 +61,8 @@ Partial Class GruposEditar
         ' 
         ' TextBoxNombre
         ' 
-        TextBoxNombre.Anchor = AnchorStyles.None
-        TextBoxNombre.Location = New Point(31, 154)
+        TextBoxNombre.Anchor = AnchorStyles.Top
+        TextBoxNombre.Location = New Point(31, 171)
         TextBoxNombre.Name = "TextBoxNombre"
         TextBoxNombre.Size = New Size(125, 27)
         TextBoxNombre.TabIndex = 3
@@ -82,20 +89,50 @@ Partial Class GruposEditar
         ' 
         ' TextBoxPais
         ' 
-        TextBoxPais.Anchor = AnchorStyles.None
-        TextBoxPais.Location = New Point(219, 154)
+        TextBoxPais.Anchor = AnchorStyles.Top
+        TextBoxPais.Location = New Point(219, 171)
         TextBoxPais.Name = "TextBoxPais"
         TextBoxPais.Size = New Size(125, 27)
         TextBoxPais.TabIndex = 4
         ' 
         ' ComboboxIdEntrenador
         ' 
-        ComboboxIdEntrenador.Anchor = AnchorStyles.None
+        ComboboxIdEntrenador.Anchor = AnchorStyles.Top
         ComboboxIdEntrenador.FormattingEnabled = True
-        ComboboxIdEntrenador.Location = New Point(404, 154)
+        ComboboxIdEntrenador.Location = New Point(404, 171)
         ComboboxIdEntrenador.Name = "ComboboxIdEntrenador"
         ComboboxIdEntrenador.Size = New Size(133, 28)
         ComboboxIdEntrenador.TabIndex = 2
+        ' 
+        ' Label1
+        ' 
+        Label1.Anchor = AnchorStyles.Bottom
+        Label1.AutoSize = True
+        Label1.Location = New Point(62, 148)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(64, 20)
+        Label1.TabIndex = 7
+        Label1.Text = "Nombre"
+        ' 
+        ' Label2
+        ' 
+        Label2.Anchor = AnchorStyles.Bottom
+        Label2.AutoSize = True
+        Label2.Location = New Point(265, 148)
+        Label2.Name = "Label2"
+        Label2.Size = New Size(34, 20)
+        Label2.TabIndex = 8
+        Label2.Text = "Pais"
+        ' 
+        ' Label3
+        ' 
+        Label3.Anchor = AnchorStyles.Bottom
+        Label3.AutoSize = True
+        Label3.Location = New Point(422, 148)
+        Label3.Name = "Label3"
+        Label3.Size = New Size(97, 20)
+        Label3.TabIndex = 9
+        Label3.Text = "IDEntrenador"
         ' 
         ' GruposEditar
         ' 
@@ -115,5 +152,8 @@ Partial Class GruposEditar
     Friend WithEvents BotonEditar As Button
     Friend WithEvents TextBoxPais As TextBox
     Friend WithEvents ComboboxIdEntrenador As ComboBox
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Label1 As Label
 
 End Class

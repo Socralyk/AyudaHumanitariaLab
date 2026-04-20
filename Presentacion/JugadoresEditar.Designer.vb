@@ -30,6 +30,11 @@ Partial Class JugadoresEditar
         BotonEditar = New Button()
         ComboBoxIdGrupo = New ComboBox()
         TextBoxEdad = New TextBox()
+        Label2 = New Label()
+        Label1 = New Label()
+        Label3 = New Label()
+        Label4 = New Label()
+        Label5 = New Label()
         TableLayoutPanel1.SuspendLayout()
         SuspendLayout()
         ' 
@@ -37,21 +42,28 @@ Partial Class JugadoresEditar
         ' 
         TableLayoutPanel1.ColumnCount = 3
         TableLayoutPanel1.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 33.3333321F))
-        TableLayoutPanel1.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 33.3333321F))
-        TableLayoutPanel1.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 33.3333321F))
-        TableLayoutPanel1.Controls.Add(TextBoxUsername, 1, 1)
-        TableLayoutPanel1.Controls.Add(TextBoxApellidos, 0, 1)
-        TableLayoutPanel1.Controls.Add(TextBoxNombre, 0, 0)
-        TableLayoutPanel1.Controls.Add(BotonBorrar, 2, 3)
-        TableLayoutPanel1.Controls.Add(BotonEditar, 2, 2)
-        TableLayoutPanel1.Controls.Add(ComboBoxIdGrupo, 2, 0)
-        TableLayoutPanel1.Controls.Add(TextBoxEdad, 1, 0)
+        TableLayoutPanel1.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 33.3333359F))
+        TableLayoutPanel1.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 33.3333359F))
+        TableLayoutPanel1.Controls.Add(Label5, 1, 2)
+        TableLayoutPanel1.Controls.Add(Label4, 0, 2)
+        TableLayoutPanel1.Controls.Add(Label3, 2, 0)
+        TableLayoutPanel1.Controls.Add(Label1, 1, 0)
+        TableLayoutPanel1.Controls.Add(Label2, 0, 0)
+        TableLayoutPanel1.Controls.Add(TextBoxUsername, 1, 3)
+        TableLayoutPanel1.Controls.Add(TextBoxApellidos, 0, 3)
+        TableLayoutPanel1.Controls.Add(TextBoxNombre, 0, 1)
+        TableLayoutPanel1.Controls.Add(BotonBorrar, 2, 5)
+        TableLayoutPanel1.Controls.Add(BotonEditar, 2, 4)
+        TableLayoutPanel1.Controls.Add(ComboBoxIdGrupo, 2, 1)
+        TableLayoutPanel1.Controls.Add(TextBoxEdad, 1, 1)
         TableLayoutPanel1.Dock = DockStyle.Fill
         TableLayoutPanel1.Location = New Point(0, 0)
         TableLayoutPanel1.Name = "TableLayoutPanel1"
-        TableLayoutPanel1.RowCount = 4
-        TableLayoutPanel1.RowStyles.Add(New RowStyle(SizeType.Percent, 40F))
-        TableLayoutPanel1.RowStyles.Add(New RowStyle(SizeType.Percent, 40F))
+        TableLayoutPanel1.RowCount = 6
+        TableLayoutPanel1.RowStyles.Add(New RowStyle(SizeType.Percent, 20F))
+        TableLayoutPanel1.RowStyles.Add(New RowStyle(SizeType.Percent, 20F))
+        TableLayoutPanel1.RowStyles.Add(New RowStyle(SizeType.Percent, 20F))
+        TableLayoutPanel1.RowStyles.Add(New RowStyle(SizeType.Percent, 20F))
         TableLayoutPanel1.RowStyles.Add(New RowStyle(SizeType.Percent, 10F))
         TableLayoutPanel1.RowStyles.Add(New RowStyle(SizeType.Percent, 10F))
         TableLayoutPanel1.Size = New Size(762, 423)
@@ -59,24 +71,24 @@ Partial Class JugadoresEditar
         ' 
         ' TextBoxUsername
         ' 
-        TextBoxUsername.Anchor = AnchorStyles.None
-        TextBoxUsername.Location = New Point(318, 240)
+        TextBoxUsername.Anchor = AnchorStyles.Top
+        TextBoxUsername.Location = New Point(317, 255)
         TextBoxUsername.Name = "TextBoxUsername"
         TextBoxUsername.Size = New Size(125, 27)
         TextBoxUsername.TabIndex = 8
         ' 
         ' TextBoxApellidos
         ' 
-        TextBoxApellidos.Anchor = AnchorStyles.None
-        TextBoxApellidos.Location = New Point(64, 240)
+        TextBoxApellidos.Anchor = AnchorStyles.Top
+        TextBoxApellidos.Location = New Point(64, 255)
         TextBoxApellidos.Name = "TextBoxApellidos"
         TextBoxApellidos.Size = New Size(125, 27)
         TextBoxApellidos.TabIndex = 7
         ' 
         ' TextBoxNombre
         ' 
-        TextBoxNombre.Anchor = AnchorStyles.None
-        TextBoxNombre.Location = New Point(64, 71)
+        TextBoxNombre.Anchor = AnchorStyles.Top
+        TextBoxNombre.Location = New Point(64, 87)
         TextBoxNombre.Name = "TextBoxNombre"
         TextBoxNombre.Size = New Size(125, 27)
         TextBoxNombre.TabIndex = 3
@@ -84,7 +96,7 @@ Partial Class JugadoresEditar
         ' BotonBorrar
         ' 
         BotonBorrar.Anchor = AnchorStyles.None
-        BotonBorrar.Location = New Point(588, 387)
+        BotonBorrar.Location = New Point(587, 386)
         BotonBorrar.Name = "BotonBorrar"
         BotonBorrar.Size = New Size(94, 29)
         BotonBorrar.TabIndex = 5
@@ -94,7 +106,7 @@ Partial Class JugadoresEditar
         ' BotonEditar
         ' 
         BotonEditar.Anchor = AnchorStyles.None
-        BotonEditar.Location = New Point(588, 344)
+        BotonEditar.Location = New Point(587, 342)
         BotonEditar.Name = "BotonEditar"
         BotonEditar.Size = New Size(94, 29)
         BotonEditar.TabIndex = 6
@@ -103,20 +115,70 @@ Partial Class JugadoresEditar
         ' 
         ' ComboBoxIdGrupo
         ' 
-        ComboBoxIdGrupo.Anchor = AnchorStyles.None
+        ComboBoxIdGrupo.Anchor = AnchorStyles.Top
         ComboBoxIdGrupo.FormattingEnabled = True
-        ComboBoxIdGrupo.Location = New Point(568, 70)
+        ComboBoxIdGrupo.Location = New Point(568, 87)
         ComboBoxIdGrupo.Name = "ComboBoxIdGrupo"
         ComboBoxIdGrupo.Size = New Size(133, 28)
         ComboBoxIdGrupo.TabIndex = 2
         ' 
         ' TextBoxEdad
         ' 
-        TextBoxEdad.Anchor = AnchorStyles.None
-        TextBoxEdad.Location = New Point(318, 71)
+        TextBoxEdad.Anchor = AnchorStyles.Top
+        TextBoxEdad.Location = New Point(317, 87)
         TextBoxEdad.Name = "TextBoxEdad"
         TextBoxEdad.Size = New Size(125, 27)
         TextBoxEdad.TabIndex = 9
+        ' 
+        ' Label2
+        ' 
+        Label2.Anchor = AnchorStyles.Bottom
+        Label2.AutoSize = True
+        Label2.Location = New Point(94, 64)
+        Label2.Name = "Label2"
+        Label2.Size = New Size(64, 20)
+        Label2.TabIndex = 10
+        Label2.Text = "Nombre"
+        ' 
+        ' Label1
+        ' 
+        Label1.Anchor = AnchorStyles.Bottom
+        Label1.AutoSize = True
+        Label1.Location = New Point(358, 64)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(43, 20)
+        Label1.TabIndex = 11
+        Label1.Text = "Edad"
+        ' 
+        ' Label3
+        ' 
+        Label3.Anchor = AnchorStyles.Bottom
+        Label3.AutoSize = True
+        Label3.Location = New Point(602, 64)
+        Label3.Name = "Label3"
+        Label3.Size = New Size(65, 20)
+        Label3.TabIndex = 12
+        Label3.Text = "IDGrupo"
+        ' 
+        ' Label4
+        ' 
+        Label4.Anchor = AnchorStyles.Bottom
+        Label4.AutoSize = True
+        Label4.Location = New Point(90, 232)
+        Label4.Name = "Label4"
+        Label4.Size = New Size(72, 20)
+        Label4.TabIndex = 13
+        Label4.Text = "Apellidos"
+        ' 
+        ' Label5
+        ' 
+        Label5.Anchor = AnchorStyles.Bottom
+        Label5.AutoSize = True
+        Label5.Location = New Point(342, 232)
+        Label5.Name = "Label5"
+        Label5.Size = New Size(75, 20)
+        Label5.TabIndex = 14
+        Label5.Text = "Username"
         ' 
         ' JugadoresEditar
         ' 
@@ -138,5 +200,10 @@ Partial Class JugadoresEditar
     Friend WithEvents BotonBorrar As Button
     Friend WithEvents BotonEditar As Button
     Friend WithEvents ComboBoxIdGrupo As ComboBox
+    Friend WithEvents Label5 As Label
+    Friend WithEvents Label4 As Label
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Label1 As Label
+    Friend WithEvents Label2 As Label
 
 End Class
