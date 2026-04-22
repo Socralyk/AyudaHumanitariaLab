@@ -35,49 +35,53 @@ Partial Class Combates
         ListBoxCombates.Dock = DockStyle.Left
         ListBoxCombates.FormattingEnabled = True
         ListBoxCombates.Location = New Point(0, 0)
+        ListBoxCombates.Margin = New Padding(4, 4, 4, 4)
         ListBoxCombates.Name = "ListBoxCombates"
-        ListBoxCombates.Size = New Size(150, 587)
+        ListBoxCombates.Size = New Size(186, 734)
         ListBoxCombates.TabIndex = 0
         ' 
         ' StatusStrip1
         ' 
         StatusStrip1.ImageScalingSize = New Size(20, 20)
         StatusStrip1.Items.AddRange(New ToolStripItem() {AñadirCombate, EditarCombate})
-        StatusStrip1.Location = New Point(150, 561)
+        StatusStrip1.Location = New Point(186, 702)
         StatusStrip1.Name = "StatusStrip1"
-        StatusStrip1.Size = New Size(975, 26)
+        StatusStrip1.Padding = New Padding(1, 0, 18, 0)
+        StatusStrip1.Size = New Size(1220, 32)
         StatusStrip1.TabIndex = 1
         StatusStrip1.Text = "StatusStrip1"
         ' 
         ' AñadirCombate
         ' 
         AñadirCombate.Name = "AñadirCombate"
-        AñadirCombate.Size = New Size(53, 20)
+        AñadirCombate.Size = New Size(64, 25)
         AñadirCombate.Text = "Añadir"
         ' 
         ' EditarCombate
         ' 
         EditarCombate.Name = "EditarCombate"
-        EditarCombate.Size = New Size(48, 20)
+        EditarCombate.Size = New Size(57, 25)
         EditarCombate.Text = "Editar"
         ' 
         ' PanelCombates
         ' 
         PanelCombates.Dock = DockStyle.Fill
-        PanelCombates.Location = New Point(150, 0)
+        PanelCombates.Location = New Point(186, 0)
+        PanelCombates.Margin = New Padding(4, 4, 4, 4)
         PanelCombates.Name = "PanelCombates"
-        PanelCombates.Size = New Size(975, 561)
+        PanelCombates.Size = New Size(1220, 702)
         PanelCombates.TabIndex = 2
         ' 
         ' Combates
         ' 
-        AutoScaleDimensions = New SizeF(8F, 20F)
+        AutoScaleDimensions = New SizeF(10F, 25F)
         AutoScaleMode = AutoScaleMode.Font
         Controls.Add(PanelCombates)
         Controls.Add(StatusStrip1)
         Controls.Add(ListBoxCombates)
+        Margin = New Padding(4, 4, 4, 4)
         Name = "Combates"
-        Size = New Size(1125, 587)
+        Size = New Size(1406, 734)
         StatusStrip1.ResumeLayout(False)
         StatusStrip1.PerformLayout()
         ResumeLayout(False)

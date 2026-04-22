@@ -32,4 +32,9 @@
         Return Me.CombateDAO.Insertar(Me)
     End Function
 
+    Public Function BorrarCombate() As Integer
+        '
+        Return Me.CombateDAO.Borrar(Me)
+    End Function
+
 End Class

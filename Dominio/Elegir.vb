@@ -35,6 +35,14 @@
         Return Me.ElegirDAO.Insertar(Me)
     End Function
 
+    Public Function ActualizarElegir() As Integer
+        Return Me.ElegirDAO.Actualizar(Me)
+    End Function
+
+    Public Function BorrarElegir() As Integer
+        Return Me.ElegirDAO.Borrar(Me)
+    End Function
+
 
 
 End Class

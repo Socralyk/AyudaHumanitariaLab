@@ -55,7 +55,8 @@ Partial Class Presentacion
         MenuStrip1.Items.AddRange(New ToolStripItem() {AgenciaToolStripMenuItem, EntrenadorToolStripMenuItem, EntrandoresToolStripMenuItem, JugadoresToolStripMenuItem})
         MenuStrip1.Location = New Point(0, 0)
         MenuStrip1.Name = "MenuStrip1"
-        MenuStrip1.Size = New Size(800, 28)
+        MenuStrip1.Padding = New Padding(8, 2, 0, 2)
+        MenuStrip1.Size = New Size(1000, 33)
         MenuStrip1.TabIndex = 1
         MenuStrip1.Text = "MenuStrip1"
         ' 
@@ -63,107 +64,109 @@ Partial Class Presentacion
         ' 
         AgenciaToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {EventosToolStripMenuItem, CombatesToolStripMenuItem, MapasToolStripMenuItem1})
         AgenciaToolStripMenuItem.Name = "AgenciaToolStripMenuItem"
-        AgenciaToolStripMenuItem.Size = New Size(148, 24)
+        AgenciaToolStripMenuItem.Size = New Size(179, 29)
         AgenciaToolStripMenuItem.Text = "Gestión de torneos"
         ' 
         ' EventosToolStripMenuItem
         ' 
         EventosToolStripMenuItem.Name = "EventosToolStripMenuItem"
-        EventosToolStripMenuItem.Size = New Size(159, 26)
+        EventosToolStripMenuItem.Size = New Size(195, 34)
         EventosToolStripMenuItem.Text = "Eventos"
         ' 
         ' CombatesToolStripMenuItem
         ' 
         CombatesToolStripMenuItem.Name = "CombatesToolStripMenuItem"
-        CombatesToolStripMenuItem.Size = New Size(159, 26)
+        CombatesToolStripMenuItem.Size = New Size(195, 34)
         CombatesToolStripMenuItem.Text = "Combates"
         ' 
         ' MapasToolStripMenuItem1
         ' 
         MapasToolStripMenuItem1.Name = "MapasToolStripMenuItem1"
-        MapasToolStripMenuItem1.Size = New Size(159, 26)
+        MapasToolStripMenuItem1.Size = New Size(195, 34)
         MapasToolStripMenuItem1.Text = "Mapas"
         ' 
         ' EntrenadorToolStripMenuItem
         ' 
         EntrenadorToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {AgenciasToolStripMenuItem, EntrenadoresToolStripMenuItem1})
         EntrenadorToolStripMenuItem.Name = "EntrenadorToolStripMenuItem"
-        EntrenadorToolStripMenuItem.Size = New Size(148, 24)
+        EntrenadorToolStripMenuItem.Size = New Size(180, 29)
         EntrenadorToolStripMenuItem.Text = "Recursos Humanos"
         ' 
         ' AgenciasToolStripMenuItem
         ' 
         AgenciasToolStripMenuItem.Name = "AgenciasToolStripMenuItem"
-        AgenciasToolStripMenuItem.Size = New Size(179, 26)
+        AgenciasToolStripMenuItem.Size = New Size(270, 34)
         AgenciasToolStripMenuItem.Text = "Agencias"
         ' 
         ' EntrenadoresToolStripMenuItem1
         ' 
         EntrenadoresToolStripMenuItem1.Name = "EntrenadoresToolStripMenuItem1"
-        EntrenadoresToolStripMenuItem1.Size = New Size(179, 26)
+        EntrenadoresToolStripMenuItem1.Size = New Size(270, 34)
         EntrenadoresToolStripMenuItem1.Text = "Entrenadores"
         ' 
         ' EntrandoresToolStripMenuItem
         ' 
         EntrandoresToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {GruposToolStripMenuItem, JugadoresToolStripMenuItem2})
         EntrandoresToolStripMenuItem.Name = "EntrandoresToolStripMenuItem"
-        EntrandoresToolStripMenuItem.Size = New Size(108, 24)
+        EntrandoresToolStripMenuItem.Size = New Size(129, 29)
         EntrandoresToolStripMenuItem.Text = "Competición"
         ' 
         ' GruposToolStripMenuItem
         ' 
         GruposToolStripMenuItem.Name = "GruposToolStripMenuItem"
-        GruposToolStripMenuItem.Size = New Size(159, 26)
+        GruposToolStripMenuItem.Size = New Size(270, 34)
         GruposToolStripMenuItem.Text = "Grupos"
         ' 
         ' JugadoresToolStripMenuItem2
         ' 
         JugadoresToolStripMenuItem2.Name = "JugadoresToolStripMenuItem2"
-        JugadoresToolStripMenuItem2.Size = New Size(159, 26)
+        JugadoresToolStripMenuItem2.Size = New Size(270, 34)
         JugadoresToolStripMenuItem2.Text = "Jugadores"
         ' 
         ' JugadoresToolStripMenuItem
         ' 
         JugadoresToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {PersonajesToolStripMenuItem1})
         JugadoresToolStripMenuItem.Name = "JugadoresToolStripMenuItem"
-        JugadoresToolStripMenuItem.Size = New Size(84, 24)
+        JugadoresToolStripMenuItem.Size = New Size(100, 29)
         JugadoresToolStripMenuItem.Text = "Catálogo"
         ' 
         ' PersonajesToolStripMenuItem1
         ' 
         PersonajesToolStripMenuItem1.DropDownItems.AddRange(New ToolStripItem() {ADistanciaToolStripMenuItem, CuerpoACuerpoToolStripMenuItem1})
         PersonajesToolStripMenuItem1.Name = "PersonajesToolStripMenuItem1"
-        PersonajesToolStripMenuItem1.Size = New Size(224, 26)
+        PersonajesToolStripMenuItem1.Size = New Size(270, 34)
         PersonajesToolStripMenuItem1.Text = "Personajes"
         ' 
         ' ADistanciaToolStripMenuItem
         ' 
         ADistanciaToolStripMenuItem.Name = "ADistanciaToolStripMenuItem"
-        ADistanciaToolStripMenuItem.Size = New Size(224, 26)
+        ADistanciaToolStripMenuItem.Size = New Size(270, 34)
         ADistanciaToolStripMenuItem.Text = "A distancia"
         ' 
         ' CuerpoACuerpoToolStripMenuItem1
         ' 
         CuerpoACuerpoToolStripMenuItem1.Name = "CuerpoACuerpoToolStripMenuItem1"
-        CuerpoACuerpoToolStripMenuItem1.Size = New Size(224, 26)
+        CuerpoACuerpoToolStripMenuItem1.Size = New Size(270, 34)
         CuerpoACuerpoToolStripMenuItem1.Text = "Cuerpo a cuerpo"
         ' 
         ' PanelMuestra
         ' 
         PanelMuestra.Dock = DockStyle.Fill
-        PanelMuestra.Location = New Point(0, 28)
+        PanelMuestra.Location = New Point(0, 33)
+        PanelMuestra.Margin = New Padding(4, 4, 4, 4)
         PanelMuestra.Name = "PanelMuestra"
-        PanelMuestra.Size = New Size(800, 422)
+        PanelMuestra.Size = New Size(1000, 529)
         PanelMuestra.TabIndex = 2
         ' 
         ' Presentacion
         ' 
-        AutoScaleDimensions = New SizeF(8F, 20F)
+        AutoScaleDimensions = New SizeF(10F, 25F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(800, 450)
+        ClientSize = New Size(1000, 562)
         Controls.Add(PanelMuestra)
         Controls.Add(MenuStrip1)
         MainMenuStrip = MenuStrip1
+        Margin = New Padding(4, 4, 4, 4)
         Name = "Presentacion"
         Text = "Presentacion"
         MenuStrip1.ResumeLayout(False)

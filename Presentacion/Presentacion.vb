@@ -56,4 +56,8 @@
     Private Sub CuerpoACuerpoToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles CuerpoACuerpoToolStripMenuItem1.Click
         cambiarvista(New PersonajesCuerpoACuerpo())
     End Sub
+
+    Private Sub PersonajesToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles PersonajesToolStripMenuItem1.Click
+
+    End Sub
 End Class
